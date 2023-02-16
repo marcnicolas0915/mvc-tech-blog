@@ -1,0 +1,37 @@
+[
+    {
+      "title": "Javascript is cool!",
+      "content": "With javascript, you can do anything you want to a website!  Its the best coding language.",
+      "user_id": 5
+    },
+    {
+      "title": "I prefer C++ to javaScript",
+      "content": "I just feel like it's better for object oriented programming, maybe I'm old fashioned",
+      "user_id": 2
+    },
+      {
+      "title": "Bootstrap is the best!",
+      "content": "It's very easy to use and the most flexible library by far!",
+      "user_id": 7
+    },
+      {
+      "title": "Bootstrap is the worst!",
+      "content": "It's very hard to use and the least flexible library by far!",
+      "user_id": 4
+    },
+      {
+      "title": "What is your favorite font?  Let me know in the comments!",
+      "content": "Personally I love Trebuchet Bold but I'm curious what are your go-to's?",
+      "user_id": 3
+    },
+      {
+      "title": "MySql is a game changer",
+      "content": "With mySql, we can use databases to store and organize data.",
+      "user_id": 1
+    },
+      {
+      "title": "I'm actually just lost",
+      "content": "I was looking for the Tech Frog but I'm stuck here now.",
+      "user_id": 6
+    }
+  ]

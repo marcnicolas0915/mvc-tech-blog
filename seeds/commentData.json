@@ -1,0 +1,52 @@
+[
+    {
+      "content": "It really is the best!",
+      "post_id": 1,
+      "user_id": 5
+    },
+    {
+      "content": "I think you are just old fashioned, nothing beats javaScript!",
+      "post_id": 2,
+      "user_id": 2
+    },
+      {
+      "content": "I'ts the best!!",
+      "post_id": 4,
+      "user_id": 1
+    },
+      {
+      "content": "It's the worst!",
+      "post_id": 3,
+      "user_id": 4
+    },
+      {
+      "content": "Sql has changed my life, too.",
+      "post_id": 6,
+      "user_id": 6
+    },
+      {
+      "content": "What the heck is Tech Frog?  Get out of here, man.",
+      "post_id": 7,
+      "user_id": 7
+    },
+      {
+      "content": "I only ever use m o n o s p a c e",
+      "post_id": 5,
+      "user_id": 3
+    },
+      {
+      "content": "This is the hill I will die on!",
+      "post_id": 2,
+      "user_id": 1
+    },
+    {
+      "content": "FontAwesome is so cool, you should check it out.",
+      "post_id": 7,
+      "user_id": 3
+    },
+    {
+      "content": "FontAwesome is so cool, you should check it out.",
+      "post_id": 7,
+      "user_id": 3
+    }
+  ]
