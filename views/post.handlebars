@@ -1,0 +1,68 @@
+<div class="col-md-12">
+    <div class="border border-light bg-dark p-5">
+      <h2>{{title}}
+        {{#if post_access}}
+          <button class="btn-sm btn-warning post-render float-right" >Edit</button>
+        {{/if}}
+      </h2>
+      <p class="p-5">
+        {{content}}
+      </p>
+      <p class="float-left">Created by {{user.name}} on {{format_date date_created}}</p>
+      <p class="float-right">post no. <span id="post-id">{{id}}</span></p>
+
+      <br>
+      <form class="form post-update-form d-none">
+        <div class="form-group">
+          <label for="post-name">post name:</label>
+          <input class="form-input" type="text" id="post-name" name="post-name" />
+        </div>
+        <div class="form-group">
+          <label for="post-content">content:</label>
+          <textarea class="form-input" id="post-content" name="post-content"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-sm btn-warning post-update" data-id="{{id}}">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br>
+  <div class="col-md-11">
+    <ul class="comment-list">
+      {{#each this.comments as |c|}}
+          <div class="card col-sm-12 col-md-12 col-lg-12 bg-dark border-white" style="width: 100%;">
+            <div class="card-body">
+            <h5 class="card-title">{{commenter.name}} says:</h5>
+            <p class="card-text">{{c.content}}</p>
+            <h6 class="card-subtitle mb-2 text-muted float-left">{{format_date date_created}}</h6>
+            {{#if c.comment_access}}
+            <button class="btn btn-sm btn-danger comment-delete float-right" data-curr-user="{{this.current_user}}" data-creator="{{comment.user_id}}" data-id="{{c.id}}">Delete Comment</button>
+            <button class="btn-sm btn-warning comment-render float-right mr-2">Update Comment</button>
+                <form class="form comment-update-form d-none">
+                    <div class="form-group">
+                      <label for="comment-content">content:</label>
+                      <textarea class="form-input" id="comment-update-content" name="comment-content"></textarea>
+                      <button type="submit" class="btn-sm btn-warning comment-update" data-id="{{id}}">Update</button>
+                    </div>
+                  </form>
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </ul>
+      <button class="btn btn-sm btn-primary new-comment-render">Create comment</button>
+      <form class="form new-comment-form invisible">
+        <div class="form-group">
+          <label for="new-comment-content">Add comment:</label>
+          <textarea
+            class="form-input"
+            id="new-comment-content"
+            name="new-comment-content"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Add comment</button>
+        </div>
+      </form>
+    </div>
+
+<script src="/js/comment.js" type="text/javascript"></script>
